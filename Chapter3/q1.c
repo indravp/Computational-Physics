@@ -8,13 +8,12 @@ void main()
   for(x=0.0;x<=2.1;x+=0.5)
     {
       t = 1/(x*x);
-      s = t;
+      s = t+1;
       for(n=3;n<=20;n++)
 	{
 	  t*=1/x;
 	  s+=t;
 	}
-      s+=1;
       printf("%f\t%12.5e\n",x,s);
     }
 }
