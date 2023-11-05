@@ -20,6 +20,7 @@ void main()
 	  n++;
 	}
       while(fabs(t/s)>acc);
+      s*=cos((pi*x*x)/2);
       fprintf(fp,"%f\t%f\n",x,s);
     }
   fclose(fp);
