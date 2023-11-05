@@ -13,15 +13,12 @@ float secant(float x,float y1, float y2)
   float f1,f2,y3,z,acc=0.0001;
   do
     {
-      //printf("1\n");
       f1 = f(x,y1);
       f2 = f(x,y2);
       y3 = (f2*y1-f1*y2)/(f2-f1);
-      // printf("y3 %f\n",y3);
       y1 = y2;
       y2 = y3;
       z = fabs(f2);
-      //printf("%f\n",z);
     }
   while(z>acc);
   return y2;
